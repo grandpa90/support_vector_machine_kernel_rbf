@@ -44,7 +44,7 @@ ac = accuracy_score(y_test, y_pred)
 print(f"ACCURACY_SCORE is: {ac}")
 
 # This code is plotting the decision boundary of the K-Nearest Neighbors (K-NN) classifier on the test
-# set.
+# set...
 X_set, y_set = sc.inverse_transform(X_test), y_test
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 10, stop = X_set[:, 0].max() + 10, step = 1),
 np.arange(start = X_set[:, 1].min() - 1000, stop = X_set[:, 1].max() + 1000, step = 1))
